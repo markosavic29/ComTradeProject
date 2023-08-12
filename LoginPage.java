@@ -13,7 +13,7 @@ public class LoginPage extends BasePage {
     By usernameBy = By.id("user-name");
     By passwordBy = By.id("password");
     By loginButtonBy = By.id("login-button");
-    By errorContainerBy = By.xpath("//*[@id='login_button_container']/div/form/div[3]/h3");
+    By errorContainerBy = By.xpath("/html/body/div/div/div[2]/div[1]/div/div/form/div[3]/h3");
     By usernames = By.id("login_credentials");
 
     public LoginPage basePage() {
