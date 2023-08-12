@@ -12,9 +12,9 @@ public class CheckoutOverview extends BasePage {
     By finishButtonBy = By.id("finish");
     By product1PriceBy = By.xpath("//*[@id='checkout_summary_container']/div/div[1]/div[3]/div[2]/div[2]/div");
     By product2PriceBy = By.xpath("//*[@id='checkout_summary_container']/div/div[1]/div[4]/div[2]/div[2]/div");
-    By itemTotalBy = By.xpath("//*[@id='checkout_summary_container']/div/div[2]/div[5]");
-    By taxBy = By.xpath("//*[@id='checkout_summary_container']/div/div[2]/div[6]");
-    By totalBy = By.xpath("//*[@id='checkout_summary_container']/div/div[2]/div[7]");
+    By itemTotalBy = By.xpath("//*[@id=\"checkout_summary_container\"]/div/div[2]/div[6]");
+    By taxBy = By.xpath("//*[@id=\"checkout_summary_container\"]/div/div[2]/div[7]");
+    By totalBy = By.xpath("//*[@id='checkout_summary_container']/div/div[2]/div[8]");
 
     public CheckoutOverview clickOnFinishButton() {
         click(finishButtonBy);
