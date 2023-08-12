@@ -12,7 +12,7 @@ public class BaseTest {
     public int numberOfProducts = 6;
     public String standardUsername = "standard_user";
     public String standardPassword = "secret_sauce";
-    public String expectedText = "PRODUCTS";
+    public String expectedText = "Products";
     public String lockedOutUser = "locked_out_user";
     public String errorTextLockedOut = "Epic sadface: Sorry, this user has been locked out.";
     public String emptyUsername = "";
@@ -27,13 +27,15 @@ public class BaseTest {
     public String firstName = "Marko";
     public String lastName = "Savic";
     public String zip = "37000";
-    public String shoppingMassage = "THANK YOU FOR YOUR ORDER";
+    public String shoppingMassage = "Thank you for your order!";
 
     @Before
     public void setup() {
-        System.setProperty("webdriver.chromedriver",
-                "C:\\Users\\marko\\Desktop\\TestProject\\TestProject\\lib\\chromedriver.exe");
-        driver = new ChromeDriver();
+        System.setProperty("webdriver.chrome.driver",
+                "C:\\Users\\marko\\Desktop\\ProjekatZaIspit\\ProjekatZaIspit\\lib\\chromedriver.exe");
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*");
+        driver = new ChromeDriver(options);
         driver.manage().window().maximize();
     }
 
