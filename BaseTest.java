@@ -26,6 +26,8 @@ public class BaseTest {
     public String performanceGlitchUser = "performance_glitch_user";
     public String firstName = "Marko";
     public String lastName = "Savic";
+    public String expectedLink = "https://saucelabs.com/";
+
     public String zip = "37000";
     public String shoppingMassage = "Thank you for your order!";
 
