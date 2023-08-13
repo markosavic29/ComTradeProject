@@ -17,7 +17,6 @@ public class HomePage extends BasePage {
     By numberOfItemsBy = By.className("inventory_item");
     By hamburgerMenuBy = By.id("react-burger-menu-btn");
     By aboutButtonBy = By.id("about_sidebar_link");
-    String expectedLink = "https://saucelabs.com/";
     By logoutButtonBy = By.id("logout_sidebar_link");
 
     public HomePage verifiySuccessfulLogin(String expectedText) {
